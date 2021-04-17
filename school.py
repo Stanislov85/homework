@@ -21,7 +21,6 @@ class Student:
         import statistics
         for (grade_key, grade_value) in self.grades.items():
            grade_value_ob += grade_value
-           print(grade_value_ob)
         self.reduce_grade = statistics.mean(grade_value_ob)  # среднее значение
         return f'Имя: {self.name}\nФамилия: {self.surname}\nСредняя	оценка за домашние задания: {self.reduce_grade}  ' \
                f'\nКурсы в процессе изучения:{", ".join(self.courses_in_progress)}  ' \
